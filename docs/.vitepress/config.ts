@@ -30,7 +30,7 @@ export default defineConfig({
     lastUpdated: true,
     lang: 'zh-CN',
     themeConfig: {
-        // logo: '/logo.png',
+        logo: '/logo.png',
         siteTitle: 'Cric-Ui',
         outline: 3,
         socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
