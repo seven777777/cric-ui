@@ -26,7 +26,7 @@ const env = process.env.NODE_ENV
 export default defineConfig({
     title: 'Hello VitePress',
     description: 'Just playing around',
-    base: env === 'production' ? '/web-vue/' : '/',
+    base: env === 'production' ? '/cric-ui/' : '/',
     lastUpdated: true,
     lang: 'zh-CN',
     themeConfig: {
