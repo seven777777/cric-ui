@@ -39,12 +39,18 @@
         "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
         "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
         "format": "prettier --write .",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "docs:serve": "vitepress serve docs"
     },
     "dependencies": {
+        "@vitepress-demo-preview/component": "^2.3.0",
+        "@vitepress-demo-preview/plugin": "^1.1.9",
         "husky": "^8.0.3",
         "sass": "^1.62.1",
         "vite-plugin-vue-setup-extend": "^0.4.0",
+        "vitepress": "^1.0.0-alpha.75",
         "vue": "^3.3.2"
     },
     "devDependencies": {

@@ -15,6 +15,8 @@ const props = withDefaults(
 
 <style lang="scss" scoped>
 .cric-button {
+    border: 0;
+    padding: 0 15px;
     height: 30px;
     border-radius: 4px;
     background-color: palegreen;
