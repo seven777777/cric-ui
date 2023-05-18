@@ -6,4 +6,5 @@ import CricUi from '../packages'
 
 const app = createApp(App)
 app.use(CricUi)
+
 app.mount('#app')

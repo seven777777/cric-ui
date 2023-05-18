@@ -26,9 +26,9 @@ const sidebar: DefaultTheme.Sidebar = {
 export default defineConfig({
     title: 'Hello VitePress',
     description: 'Just playing around',
-    lang: 'cn-ZH',
     base: '/',
     lastUpdated: true,
+    lang: 'zh-CN',
     themeConfig: {
         logo: '/logo.png',
         siteTitle: 'Cric-Ui',

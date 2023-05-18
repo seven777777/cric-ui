@@ -3,6 +3,7 @@ import { AntDesignContainer } from '@vitepress-demo-preview/component'
 import '@vitepress-demo-preview/component/dist/style.css'
 import CricUi from '../../../lib/cric-ui.mjs'
 import '../../../lib/style.css'
+// import CricUi from '../../../packages'
 
 export default {
     ...theme,
