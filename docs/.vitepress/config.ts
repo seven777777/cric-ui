@@ -22,11 +22,11 @@ const sidebar: DefaultTheme.Sidebar = {
         }
     ]
 }
-
+const env = process.env.NODE_ENV
 export default defineConfig({
     title: 'Hello VitePress',
     description: 'Just playing around',
-    base: '/',
+    base: env === 'production' ? '/web-vue/' : '/',
     lastUpdated: true,
     lang: 'zh-CN',
     themeConfig: {
