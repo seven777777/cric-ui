@@ -1,11 +1,11 @@
 import type { App } from 'vue'
 
-import Button from './src/index.vue'
+import CButton from './src/index.vue'
 
-Button.install = function (app: App) {
+CButton.install = function (app: App) {
     // 组件注册，按需引入
-    app.component(Button.name, Button)
+    app.component(CButton.name, CButton)
     return app
 }
 
-export default Button
+export default CButton
