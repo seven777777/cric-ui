@@ -4,6 +4,7 @@
 
 <div>
  <c-button />
+ <c-icon/>
 </div>
 
 <br/>

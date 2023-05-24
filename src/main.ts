@@ -1,8 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import CricUi from '../packages'
+import CricUI from '../packages'
 
 const app = createApp(App)
-app.use(CricUi)
-
+app.use(CricUI)
 app.mount('#app')

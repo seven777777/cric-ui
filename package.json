@@ -1,6 +1,6 @@
 {
     "name": "cric-ui",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "private": false,
     "author": "seven.zhang@foxmail.com",
     "description": "CricUi - A Vue.js 3 UI library",

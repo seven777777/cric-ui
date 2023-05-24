@@ -9,6 +9,10 @@
             tag:
             <c-tag />
         </div>
+        <div class="m-t10">
+            icon:
+            <c-icon />
+        </div>
     </div>
 </template>
 
