@@ -2,7 +2,7 @@
 
 ## 当前版本：
 
-[![CricUI](https://img.shields.io/badge/npm-v1.0.1-brightgreen)](https://www.npmjs.com/package/cric-ui)
+[![CricUI](https://img.shields.io/badge/npm-v1.0.2-brightgreen)](https://www.npmjs.com/package/cric-ui)
 
 ## node 版本
 

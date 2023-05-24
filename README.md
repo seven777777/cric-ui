@@ -1,52 +1,67 @@
-# cric-ui
+# CricUI
 
-This template should help get you started developing with Vue 3 in Vite.
+A Vue.js 3 UI library
 
-## Recommended IDE Setup
+[![CricUI](https://img.shields.io/badge/npm-v1.0.2-brightgreen)](https://www.npmjs.com/package/cric-ui)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+---
 
-## Type Support for `.vue` Imports in TS
+-   🔭 [Vite](https://vitejs.dev)
+-   💪 [Vue3](https://vuejs.org)
+-   🔥 TypeScript
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## 环境支持
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+node：>=16.0.0
 
-1. Disable the built-in TypeScript Extension
-    1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+> 由于 Vue3 不支持 IE11，CricUI 也不支持 IE 浏览器
 
-## Customize configuration
+## 安装
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+`npm i cric-ui`
 
-## Project Setup
+## 快速开始
 
-```sh
-npm install
+### 全局引入
+
+```js
+// main.ts
+import { createApp } from 'vue'
+
+import CricUI from 'cric-ui'
+import 'cric-ui/lib/style.css'
+
+const app = createApp(App)
+
+app.use(CricUi)
+app.mount('#app')
 ```
 
-### Compile and Hot-Reload for Development
+### 按需引入
 
-```sh
-npm run dev
+```ts
+// main.ts
+import { createApp } from 'vue'
+
+import { CButton } from 'cric-ui'
+import 'cric-ui/lib/style.css'
+
+const app = createApp(App)
+
+app.use(CButton)
+app.mount('#app')
 ```
 
-### Type-Check, Compile and Minify for Production
+### 使用示例
 
-```sh
-npm run build
+```vue
+<c-button></c-button>
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+---
 
-```sh
-npm run test:unit
-```
+## 版本记录
 
-### Lint with [ESLint](https://eslint.org/)
+-   2023/05/24 1.0.2 测试版
 
-```sh
-npm run lint
-```
+有问题欢迎 issue...

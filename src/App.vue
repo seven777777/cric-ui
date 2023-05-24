@@ -1,6 +1,6 @@
 <template>
     <div class="box">
-        <h1>Cric-Ui</h1>
+        <h1>CricUI</h1>
         <div>
             button:
             <c-button />
