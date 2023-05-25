@@ -1,5 +1,6 @@
 |-- cric-ui
     |-- README.md
+    |-- directoryList.md
     |-- index.md
     |-- .vitepress
     |   |-- config.ts

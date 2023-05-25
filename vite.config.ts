@@ -17,7 +17,7 @@ export default defineConfig({
         outDir: 'lib',
         lib: {
             entry: resolve(__dirname, './packages/index.ts'),
-            name: 'CricUi',
+            name: 'CricUI',
             fileName: 'cric-ui'
         },
         rollupOptions: {

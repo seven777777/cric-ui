@@ -1,11 +1,13 @@
 import type { App } from 'vue'
 
+// 所有组件
+export * from './component'
+import components from './component'
+
 // 完整引入组件
 const install = function (app: App) {
-    const modulesFiles = import.meta.glob('./components/**/index.ts', { eager: true })
-    Object.keys(modulesFiles).forEach((key: any) => {
-        const com: any = modulesFiles[key]
-        app.use(com.default)
+    components.forEach((component: any) => {
+        app.use(component as unknown as { install: () => any })
     })
 }
 
