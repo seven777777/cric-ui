@@ -1,9 +1,9 @@
 /**
  * 导出所有组件
  */
-import CButton from './components/button'
-import CIcon from './components/icon'
-import CTag from './components/tag'
+import CButton from './components/Button'
+import CIcon from './components/Icon'
+import CTag from './components/Tag'
 
 const modulesFiles = import.meta.glob('./components/**/index.ts', { eager: true })
 const obj: any = {}

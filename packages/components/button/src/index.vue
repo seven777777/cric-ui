@@ -19,7 +19,7 @@ const props = withDefaults(
     padding: 0 15px;
     height: 30px;
     border-radius: 4px;
-    background-color: palegreen;
+    background-color: $primaryColor;
     cursor: pointer;
 }
 </style>

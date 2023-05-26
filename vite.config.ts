@@ -13,6 +13,13 @@ export default defineConfig({
             '@': fileURLToPath(new URL('./src', import.meta.url))
         }
     },
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: `@use './packages/theme/color.variables.scss' as *;`
+            }
+        }
+    },
     build: {
         outDir: 'lib',
         lib: {

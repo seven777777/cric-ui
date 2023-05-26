@@ -13,6 +13,10 @@
             icon:
             <c-icon />
         </div>
+        <div class="m-t10">
+            CPopoverDiy:
+            <c-popover-diy />
+        </div>
     </div>
 </template>
 
