@@ -1,14 +1,15 @@
 # CricUI
 
-A Vue.js 3 UI library
+A Vue.js 3 UI library base Element plus
 
-[![CricUI](https://img.shields.io/badge/npm-v1.0.2-brightgreen)](https://www.npmjs.com/package/cric-ui)
+[![CricUI](https://img.shields.io/badge/npm-v1.0.6-brightgreen)](https://www.npmjs.com/package/cric-ui)
 
 ---
 
 -   🔭 [Vite](https://vitejs.dev)
 -   💪 [Vue3](https://vuejs.org)
 -   🔥 TypeScript
+-   👉 Element Plus
 
 ## 环境支持
 
@@ -50,6 +51,24 @@ const app = createApp(App)
 
 app.use(CButton)
 app.mount('#app')
+```
+
+### ElementPlus 引入
+
+```ts
+// main.js
+
+// element-plus
+import ElementPlus from 'element-plus'
+import 'element-plus/theme-chalk/index.css'
+import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+
+// element-plus icon注册
+for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+    app.component(key, component)
+}
+
+app.use(ElementPlus)
 ```
 
 ### 使用示例

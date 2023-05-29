@@ -1,6 +1,6 @@
 import {
   Transition,
-  computed,
+  computed2 as computed,
   createApp,
   createBaseVNode,
   createBlock,
@@ -18,7 +18,7 @@ import {
   unref,
   watch,
   withCtx
-} from "./chunk-QH2LEIYP.js";
+} from "./chunk-UFOEWOZZ.js";
 
 // node_modules/@vitepress-demo-preview/component/dist/preview-component.js
 var Z = (t, c) => {
