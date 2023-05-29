@@ -1,17 +1,23 @@
 {
-  "hash": "e331b003",
-  "browserHash": "08cb2d08",
+  "hash": "c18c965f",
+  "browserHash": "9a509c1e",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "a72c7e29",
+      "fileHash": "9ed9b8b0",
       "needsInterop": false
     },
     "@vitepress-demo-preview/component": {
       "src": "../../../../node_modules/@vitepress-demo-preview/component/dist/preview-component.js",
       "file": "@vitepress-demo-preview_component.js",
-      "fileHash": "d1cf3276",
+      "fileHash": "adff2570",
+      "needsInterop": false
+    },
+    "cric-ui": {
+      "src": "../../../../node_modules/cric-ui/lib/cric-ui.mjs",
+      "file": "cric-ui.js",
+      "fileHash": "94f41c61",
       "needsInterop": false
     }
   },

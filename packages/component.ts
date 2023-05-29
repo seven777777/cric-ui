@@ -1,9 +1,8 @@
 /**
  * 导出所有组件
  */
+import CArrowBtn from './components/ArrowBtn'
 import CButton from './components/Button'
-import CIcon from './components/Icon'
-import CTag from './components/Tag'
 
 const modulesFiles = import.meta.glob('./components/**/index.ts', { eager: true })
 const obj: any = {}
@@ -15,4 +14,4 @@ const components = Object.keys(modulesFiles).map((key: string) => {
 
 export default components
 
-export { CButton, CIcon, CTag }
+export { CArrowBtn, CButton }

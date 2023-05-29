@@ -1,3 +1,3 @@
 <template>
-    <c-button />
+    <c-popover-diy />
 </template>

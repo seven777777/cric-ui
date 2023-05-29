@@ -1,38 +1,38 @@
 <template>
-    <div class="cric-popover-btn" :style="{ width: width, height: height }">
+    <div class="cric-arrow-btn" :style="{ width: width, height: height }">
         <div class="title-box">
-            <!-- <input-pre-icon class="mr5" icon="el-icon-location-outline" color="#F14F2E" /> -->
+            <div class="pre-arrow-box" v-if="$slots.preIcon || preIcon">
+                <slot name="preIcon">
+                    <el-icon v-if="preIcon"><component :is="preIcon"></component></el-icon>
+                </slot>
+            </div>
             <span class="title" :title="title">{{ title }}</span>
         </div>
         <el-icon :class="['arrow', status ? 'arrow_up_amt' : 'arrow_down_amt']"><ArrowDown /></el-icon>
     </div>
 </template>
 
-<script setup lang="ts" name="CPopoverBtn">
-import { watchEffect } from 'vue'
-
+<script setup lang="ts" name="CArrowBtn">
 const props = withDefaults(
     defineProps<{
         status?: boolean // 状态 ——对应箭头状态
         title: string
         width?: string // 默认自适应宽度，可设置固定宽度
         height?: string
+        preIcon?: string //前面的icon
     }>(),
     {
         status: false,
         title: '请选择',
         width: 'auto',
-        height: '28px'
+        height: '28px',
+        preIcon: ''
     }
 )
-
-watchEffect(() => {
-    console.log(props.status)
-})
 </script>
 
 <style lang="scss" scoped>
-.cric-popover-btn {
+.cric-arrow-btn {
     cursor: pointer;
     background: #ffffff;
     border-radius: 4px;
@@ -69,5 +69,10 @@ watchEffect(() => {
 .arrow_down_amt {
     transform: rotate(0);
     transition: 300ms ease;
+}
+.pre-arrow-box {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
 }
 </style>

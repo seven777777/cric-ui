@@ -11,9 +11,10 @@ import CricUI from '../packages'
 
 const app = createApp(App)
 
+// element-plus icon注册
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
     app.component(key, component)
-  }
+}
 
 app.use(ElementPlus)
 app.use(CricUI)
