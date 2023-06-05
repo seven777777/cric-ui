@@ -2,6 +2,7 @@
  * 导出所有组件
  */
 import CArrowBtn from './components/ArrowBtn'
+import CDatePlus from './components/DatePlus'
 import CButton from './components/Button'
 
 const modulesFiles = import.meta.glob('./components/**/index.ts', { eager: true })
@@ -14,4 +15,4 @@ const components = Object.keys(modulesFiles).map((key: string) => {
 
 export default components
 
-export { CArrowBtn, CButton }
+export { CArrowBtn, CDatePlus, CButton }
